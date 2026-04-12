@@ -1,4 +1,11 @@
-## [2.2.0]
+## [2.3.0] - 12.4.2026
+
+- **Breaking Change:** bump minimum SDK constraints to `sdk: >=3.10.0 <4.0.0` and `flutter: >=3.38.0`.
+- Switched lint setup to `flutter_lints` and simplified analyzer configuration.
+- Updated example web bootstrap to latest Flutter template (`$FLUTTER_BASE_HREF` and `flutter_bootstrap.js`).
+- Updated example dependencies
+
+## [2.2.0] - 10.6.2025
 - Changed enum declaration to allow compilation on Non web platforms, when the `BrowserAgent` enum types are being used.
 - Codebase refactor
 

@@ -31,6 +31,7 @@ class BrowserPlatform extends BrowserPlatformAbstract {
       appVersion: appVersion,
     );
   }
+
   @override
   BrowserAgent get browserAgent =>
       _detected?.browserAgent ?? BrowserAgent.unknown;
@@ -142,14 +143,15 @@ class BrowserPlatform extends BrowserPlatformAbstract {
 }
 
 class _BrowserDetection {
+  final BrowserAgent browserAgent;
+  final String string;
+  final String subString;
+  final String? versionSearch;
+
   const _BrowserDetection({
     required this.browserAgent,
     required this.string,
     required this.subString,
     this.versionSearch,
   });
-  final BrowserAgent browserAgent;
-  final String string;
-  final String subString;
-  final String? versionSearch;
 }
