@@ -1,3 +1,6 @@
+## [2.3.0]
+- TODO
+
 ## [2.2.0]
 - Changed enum declaration to allow compilation on Non web platforms, when the `BrowserAgent` enum types are being used.
 - Codebase refactor
